@@ -1,0 +1,113 @@
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+    font-size: 20px;
+    color: red;
+    font-weight: 800;
+}
+.product-image {
+    width: 53%;
+    max-height: 384px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.heading{
+    display: inline-block;
+    width: 50%;
+}
+
+.save-para{
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+p.story-para {
+    width: 70%;
+    padding: 40px 0px 40px 0px;
+    font-size: 26px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.logo{
+    width: 20%;
+}
+.footer-para{
+        font-size: 20px;
+        padding: 10px 10px;
+        color: red;
+        text-align: right;
+        font-weight: 800;
+}
+
+.menu-section{
+    display: inline-block;
+}
+.menu-li-atag{
+    color: red;
+}
+
+.menu:hover{
+    color: blueviolet;
+}
+
+a.menu-li-atag:hover{
+    color: black;
+}
+
+/* .address {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+  } */
+
+  .address {
+    position: relative;
+    width: 60%;
+    padding: 4px 0px 5px 34px;
+    height: 50%;
+  }
+  .absolute {
+    position: absolute;
+    top: 12%;
+    width: 10%;
+    height: 10%;
+}
+
+.main-section{
+    font-size: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.product-ul{
+    list-style: none;
+}
+.product-li {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+p.products-para {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+button {
+    margin: 18px 0 0 0;
+}
+
+fieldset {
+    padding: 40px 32px;
+}
+
+.forms {
+    margin: 25px 0px 25px 0px;
+}

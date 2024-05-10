@@ -5,20 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="icon" href="./images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+        background-image: url(./images/images.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
 </head>
 <body>
-  <div class="contact">
-    <form action="">
-        <h4 class="contact-heading">Contact Details:</h4>
-        <label for="Name">Name:</label>
-        <input type="text" name="Name" id="Name"><br>
-        <label for="Phonenumber">Phone Number:</label>
-        <input type="tel" name="Phonenumber" id="Phonenumber"><br>
-        <button>Submit</button>
-    </form>
-  </div>
-    <div>
-       <pre>
+  <header class="header-section">
+    <div class="heading"> 
+      <a href="index.html"><img src="./images/ibaco-logo-new.png" alt="logo" class="logo"></a>
+    </div>
+        <div class="menu-section">
+            <nav>
+                <ul>
+                    <!-- <h3><u><i>Our Products</i></u></h3> -->
+                    <li class="menu"><a class="menu-li-atag" href="story.html" style="text-decoration: none;">Our Story</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="product.html" style="text-decoration: none;">Our Products</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="register.html" style="text-decoration: none;">Registration</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="login.html" style="text-decoration: none;">Login</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="contactus.html" style="text-decoration: none;">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+  </header>
+   <main class="main-section">
+      <div class="address">
+        <pre>
         CORPORATE OFFICE
         HATSUN AGRO PRODUCT LTD
         Plot No. 14,
@@ -28,7 +44,14 @@
         Toll Free Number: 1800-120-3355
         Telephone Number: 044-24501622
         Mail ID: info@hap.in
-       </pre>
+        </pre>
     </div>
+    <div class="absolute">
+      <p>Address: </p>
+    </div>
+   </main>
+   <footer>
+    <p class="footer-para">&copy;Copyrights Ibaco</p>
+  </footer>
 </body>
 </html>
