@@ -6,129 +6,146 @@
     <title>OUR PRODUCTS</title>
     <link rel="icon" href="./images/logo.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
+         <style>
+/* .item1-header { grid-area: header; }
+.item2-menu { grid-area: menu; }
+.item3-main { grid-area: main; }
+.item4-right { grid-area: right; }
+.item5-footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    /* 'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'; */
+  /* gap: 10px; */
+  /* background-color: #2196F3; */
+  /* background-color: crimson;
+  padding: 10px;
+} */
+
+/* .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */ 
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  margin: 0 auto;
+    width: 80%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+    display: inline-block;
+}
+    </style>
 </head>
 <body>
     <header class="header-section">
-        <div class="heading"> 
+        <div class="heading">
             <a href="index.html"><img src="./images/ibaco-logo-new.png" alt="logo" class="logo"></a>
         </div>
-           <div class="menu-section">
-               <nav>
-                   <ul>
-                       <!-- <h3><u><i>Our Products</i></u></h3> -->
-                       <li class="menu"><a class="menu-li-atag" href="story.html" style="text-decoration: none;">Our Story</a></li>
-                       <li class="menu"><a class="menu-li-atag" href="product.html" style="text-decoration: none;">Our Products</a></li>
-                       <li class="menu"><a class="menu-li-atag" href="register.html" style="text-decoration: none;">Registration</a></li>
-                       <li class="menu"><a class="menu-li-atag" href="login.html" style="text-decoration: none;">Login</a></li>
-                       <li class="menu"><a class="menu-li-atag" href="contactus.html" style="text-decoration: none;">Contact Us</a></li>
-                       <li class="menu"><a class="menu-li-atag" href="#location-iframe" style="text-decoration: none;">Location</a></li>
-                    </ul>
-               </nav>
-           </div>
+        <div class="menu-section">
+            <nav>
+                <ul>
+                    <li class="menu"><a class="menu-li-atag" href="story.html" style="text-decoration: none;">Our Story</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="product.html" style="text-decoration: none;">Our Products</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="register.html" style="text-decoration: none;">Registration</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="login.html" style="text-decoration: none;">Login</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="contactus.html" style="text-decoration: none;">Contact Us</a></li>
+                    <li class="menu"><a class="menu-li-atag" href="location.html" style="text-decoration: none;">Location</a></li>
+                </ul>
+            </nav>
+        </div>
    </header>
-    <div id="product-details">
-        <ul class="product-ul">
-            <li class="product-li">
+    <main>
+        <!-- <div id="product-details">
+            <ul class="product-ul">
+                <li class="product-li">
+                    <p class="products-para">Ice Cream</p> 
+                    <a href="producttypes.html"> <img src="./images/icecream.jpg" alt="ice cream image" class="product-image"></a>
+                </li>
+                <li class="product-li">
+                    <p class="products-para"> Ice Cream Cakes</p>
+                    <a href="icecreamcake.html">
+                        <img src="./images/icecreamcake.png" alt="ice cream cakes image" class="product-image">
+                    </a>
+                </li>
+                <li  class="product-li"><p class="products-para">Ice Cream Shakes</p>
+                    <img src="./images/icecreamshakes.png" alt="ice cream shakes image" class="product-image">
+                </li>
+                <li class="product-li">
+                    <p class="products-para">Signature Cones</p>
+                    <img src="./images/signaturecones.png" alt="signature cones image" class="product-image">
+                </li>
+                <li class="product-li">
+                    <p class="products-para">Signature Bars</p> 
+                    <img src="./images/Ibaco-Signature-Bars-home-new-1.png" alt="signature bars image" class="product-image">
+                </li>
+            </ul>
+        </div> -->
+
+        <div class="grid-container">
+            <div class="grid-item">
                 <p class="products-para">Ice Cream</p> 
-                <a href="product"> <img src="./images/icecream.jpg" alt="ice cream image" class="product-image"></a>
-            </li>
-            <li class="product-li">
+                <a href="producttypes.html"> <img src="./images/icecream.jpg" alt="ice cream image" class="product-image"></a>
+            </div>
+            <div class="grid-item">
                 <p class="products-para"> Ice Cream Cakes</p>
-                <img src="./images/icecreamcakes.png" alt="ice cream cakes image" class="product-image">
-            </li>
-            <li  class="product-li"><p class="products-para">Ice Cream Shakes</p>
+                <a href="icecreamcake.html">
+                    <img src="./images/icecreamcake.png" alt="ice cream cakes image" class="product-image">
+                </a>
+            </div>
+            <div class="grid-item">
+                <p class="products-para">Ice Cream Shakes</p>
                 <img src="./images/icecreamshakes.png" alt="ice cream shakes image" class="product-image">
-            </li>
-            <li class="product-li">
+            </div>
+            <div class="grid-item">
                 <p class="products-para">Signature Cones</p>
                 <img src="./images/signaturecones.png" alt="signature cones image" class="product-image">
-            </li>
-            <li class="product-li">
-                <p class="products-para">Signature Bars</p> 
-                <img src="./images/Ibaco-Signature-Bars-home-new-1.png" alt="signature bars image" class="product-image">
-            </li>
-        </ul>
-    </div>
-
-    <!-- <div id="icecream-details">
-        <h4 style="text-decoration: none;"><u><i>ICE CREAM :-</i></u></h4>
-        <ol>
-            <li>FLAVOURS</li>
-            <ol>
-                <li>Bubble Gum</li>
-                <li>Cotton Candy</li>
-                <li>Coffee Caramel</li>
-                <li>Tiramisu</li>
-                <li>Peach And Strawberry Dust</li>
-                <li>Caramelized Biscuit Marvel</li>
-                <li>Tender Coconut Terrain</li>
-                <li>Bean Vanilla</li>
-                <li>Fresh Strawberry</li>
-                <li>Dark Chocolate Secrets</li>
-                <li>Californian Pistachio</li>
-                <li>Almond Crunch</li>
-                <li>Blueberry Cheesecake</li>
-                <li>Blackforest</li>
-                <li>Butterscotch bliss</li>
-                <li>White choco raspberry</li>
-                <li>Sea Salt Caramel Pecan</li>
-                <li>Caribbean Almond Fudge</li>
-                <li>Cream 'n' Cookies</li>
-                <li>Vanilla Choco Chips</li>
-                <li>Strawberry Cheesecake</li>
-                <li>Swiss Chocolate</li>
-                <li>Mango Kingdom</li>
-                <li>Italian wonder</li>
-                <li>Belgian Chocoholic</li>
-                <li>Maha Raj Bhog</li>
-                <li>Vanilla Choco Berry</li>
-                <li>Red Velvet</li>
-                <li>Chocolate Overload</li>
-                <li>White Chocolate</li>
-                <li>Electric Blackcurrant</li>
-                <li>Mocha Fudge</li>
-                <li>Blackberry Violet</li>
-                <li>Tropical Jackfruit</li>
-                <li>Fig 'n' Honey</li>
-                <li>Fruit Bonanza</li>
-                <li>Cotton Candyland</li>
-                <li>Kiwi PassionFruit Exotica</li>
-            </ol>
-            <li>SAUCES</li>
-            <ol>
-                <li>Chocolate</li>
-                <li>Strawberry</li>
-                <li>Mango Ripple</li>
-                <li>Honey</li>
-                <li>Salted Caramel</li>
-                <li>Chocolate Fudge </li>
-                <li>Blackcurrant</li>
-            </ol>
-            <li>TOPPINGS</li>
-            <ol>
-                <li>Almond</li>
-                <li>Assorted Nuts</li>
-                <li>BlueBerry</li>
-                <li>Cashew Nuts</li>
-                <li>Chocolate Buttons</li>
-                <li>Chocolate Sprinkles</li>
-                <li>Dried Cranberry</li>
-                <li>Fig</li>
-                <li>Cream Sticks</li>
-                <li>Mango Chunks</li>
-                <li>Rainbow buttons</li>
-                <li>Rainbow Sprinkles</li>
-                <li>Candied Fruit</li>
-                <li>Double Choco Chips</li>
-                <li>Raisins</li>
-                <li>Blackcurrant</li>
-                <li>Almond Chocolate Slab</li>
-                <li>Fudge Brownie</li>
-                <li>Jackfruit Crush</li>
-                <li>Chocolate Curls</li>
-            </ol>
-        </ol>
-        
-    </div>-->
+            </div>
+            <div class="grid-item">
+                <li class="product-li">
+                    <p class="products-para">Signature Bars</p> 
+                    <img src="./images/Ibaco-Signature-Bars-home-new-1.png" alt="signature bars image" class="product-image">
+                </li>
+            </div>
+          </div>
+        <!-- <div class="grid-container">
+            <div class="item1-header">Products</div>
+            <div class="item2-menu">
+                
+                    <img src="./images/icecreamcake.png" alt="ice cream cakes image" class="product-image">
+                </a>
+            </div>
+            <div class="item3-main">
+                <p class="products-para"> Ice Cream Cakes</p>
+                <a href="icecreamcake.html">
+                    <img src="./images/icecreamcake.png" alt="ice cream cakes image" class="product-image">
+                </a>
+            </div>  
+            <div class="item4-right"><p class="products-para">Ice Cream Shakes</p>
+                <img src="./images/icecreamshakes.png" alt="ice cream shakes image" class="product-image"></div>
+            <div class="item5-footer"><p class="products-para">Signature Cones</p>
+                <img src="./images/signaturecones.png" alt="signature cones image" class="product-image"></div>
+          </div> -->
+    </main>
+    <footer>
+        <p class="footers-para">&copy;Copyrights Ibaco</p>
+    </footer>
 </body>
 </html>

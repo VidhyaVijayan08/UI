@@ -2,6 +2,9 @@
 *{
     font-family: 'Times New Roman', Times, serif;
 }
+body{
+    margin: 0px;
+}
 .menu {
     display: inline-block;
     padding: 0px 5px 0px 5px;
@@ -15,11 +18,20 @@
     display: inline-block;
     vertical-align: middle;
 }
-
 .heading{
     display: inline-block;
-    width: 50%;
+    width: 46%;
+    padding: 10px 0px 0px 25px;
 }
+
+.grid-item:hover{
+    opacity: 0.5;
+}
+
+/* .heading{
+    display: inline-block;
+    width: 50%;
+} */
 
 .save-para{
     color: blueviolet;
@@ -33,6 +45,7 @@ p.story-para {
     font-size: 26px;
     margin: 0 auto;
     text-align: justify;
+    font-weight: 800;
 }
 .logo{
     width: 20%;
@@ -40,9 +53,34 @@ p.story-para {
 .footer-para{
         font-size: 20px;
         padding: 10px 10px;
-        color: red;
+        color: white;
         text-align: right;
         font-weight: 800;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0px;
+}
+.footer-paras{
+    font-size: 20px;
+    padding: 10px 10px;
+    color: white;
+    text-align: right;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: red;
+    margin: 0px;
+}
+.footers-para{
+    font-size: 20px;
+    padding: 10px 10px;
+    color: white;
+    text-align: right;
+    font-weight: 800;
+    margin: 0px;
 }
 
 .menu-section{
@@ -70,7 +108,7 @@ a.menu-li-atag:hover{
   .address {
     position: relative;
     width: 60%;
-    padding: 4px 0px 5px 34px;
+    padding: 4px 0px 5px 45px;
     height: 50%;
   }
   .absolute {
@@ -84,6 +122,7 @@ a.menu-li-atag:hover{
     font-size: 20px;
     width: 40%;
     margin: 0 auto;
+    font-weight: bold;
 }
 
 .product-ul{
@@ -108,6 +147,278 @@ fieldset {
     padding: 40px 32px;
 }
 
-.forms {
+fieldset {
     margin: 25px 0px 25px 0px;
+    background-image: url(images/form3.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icecream-type-li-atag{
+    text-decoration: none;
+    color: black;
+
+}
+
+.footers-paras {
+    margin: 0px;
+    background-color: red;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-align: right;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.icecream-type-li-atag {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.icecream-type-li-atag:hover{
+    border-bottom: 2px solid grey;
+}
+
+.icecream-type-li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 20px;
+}
+.icecream-type{
+    text-align: center;
+}
+.flavour-image {
+    max-width: 60%;
+}
+
+/* .flavour-section>.active {
+    display: block;
+} */
+/* .show {
+    display: block !important;
+} */
+.flavour-container {
+    max-width: 24%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 -4px;
+    padding: 0px 5px;
+}
+.flavour-heading {
+    margin: 9px 0px;
+    font-size: 16px;
+    color: grey;
+    font-weight: 800;
+}
+p.flavour-para {
+    margin: 0px;
+    font-size: 15px;
+}
+.flavours-section {
+    width: 87%;
+    margin: 0 auto;
+}
+.heading-flavour{
+    margin: 0px;
+}
+p.flavour-para.para-flavour {
+    padding: 7px 0px;
+}
+
+.sauces-image {
+    max-width: 60%;
+}
+.sauces-container {
+    max-width: 24%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 -4px;
+    padding: 0px 5px;
+}
+.sauces-heading {
+    margin: 9px 0px;
+    font-size: 16px;
+    color: grey;
+    font-weight: 800;
+}
+.sauces-section {
+    width: 87%;
+    margin: 0 auto;
+}
+.heading-sauces{
+    margin: 0px;
+}
+
+.toppings-image {
+    max-width: 60%;
+}
+.toppings-container {
+    max-width: 24%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 -4px;
+    padding: 0px 5px;
+}
+.toppings-heading {
+    margin: 9px 0px;
+    font-size: 16px;
+    color: grey;
+    font-weight: 800;
+}
+.toppings-section {
+    width: 87%;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.heading-toppings{
+    margin: 0px;
+}
+
+.card{
+    box-shadow: 0px 1px 4px 1px grey;
+    display: inline-block;
+    width: 44%;
+    margin-right: 30px;
+}
+
+.cards{
+    margin-left: 30px;
+}
+.card-img{
+    width: 96%;
+}
+.card-container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 35px 0px;
+}
+.card-text{
+    text-align: center;
+}
+
+.card-atag{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.card:hover{
+    opacity: 0.5;
+}
+
+.cards-img{
+    width: 70%;
+}
+/* 
+.image-text .owl-carousel .owl-item img {
+    width: 80%;
+    margin: 0 10%;
+}
+.image-text .owl-carousel-flavour .p-sizes {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.owl-item.active .item {
+    background-size: 110% 110%;
+    animation: shrink 8s 1 alternate;
+}
+.w-100 {
+    width: 100% !important;
+} */
+
+
+.icecreamcake-image {
+    max-width: 100%;
+}
+
+/* .flavour-section>.active {
+    display: block;
+} */
+/* .show {
+    display: block !important;
+} */
+.icecreamcake-container {
+    max-width: 48%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 -4px;
+    padding: 0px 5px;
+}
+.icecreamcake-heading {
+    margin: 9px 0px;
+    font-size: 16px;
+    color: grey;
+    font-weight: 800;
+}
+p.icecreamcake-para {
+    margin: 0px;
+    font-size: 15px;
+}
+.icecreamcake-section {
+    width: 87%;
+    margin: 0 auto;
+}
+.heading-icecreamcake{
+    margin: 0px;
+}
+p.icecreamcake-para.para-icecreamcake {
+    padding: 7px 0px;
+}
+
+/* .cake-image{
+    width: 20%;
+} */
+.icecreamcake-heading {
+    margin: 9px 0px;
+    font-size: 16px;
+    color: grey;
+    font-weight: 800;
+}
+
+.icecreamcake{
+    border-bottom: 2px solid grey;
+    width: 17%;
+    margin: 0 auto;
+}
+
+.cards-img {
+    width: 88%;
+    padding: 0px 15px;
+}
+
+footer{
+    background-color: red;
+}
+
+
+form{
+    margin: 0 auto;
+    width: 28%;
+    color: white;
+    /* border-color: #000000; */
+    /* background-color: darkgrey; */
+    border: none;
+    border-width: 10px;
+    font-weight: bold;
+    /* background-color: cornflowerblue; */
+}
+
+input{
+    padding: 12px 23px;
+}
+
+legend{
+    font-size: 20px;
+}
+
+a.icecream-type-li-atag:active {
+    border-bottom: 2px solid grey;
 }
