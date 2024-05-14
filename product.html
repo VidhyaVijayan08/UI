@@ -6,6 +6,7 @@
     <title>OUR PRODUCTS</title>
     <link rel="icon" href="./images/logo.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
          <style>
 /* .item1-header { grid-area: header; }
 .item2-menu { grid-area: menu; }
@@ -45,12 +46,14 @@
     width: 80%;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+    background-color: crimson;
+    color: white;
+  /* background-color: rgba(255, 255, 255, 0.8); */
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
-    display: inline-block;
+  display: inline-block;
 }
     </style>
 </head>
@@ -63,7 +66,7 @@
             <nav>
                 <ul>
                     <li class="menu"><a class="menu-li-atag" href="story.html" style="text-decoration: none;">Our Story</a></li>
-                    <li class="menu"><a class="menu-li-atag" href="product.html" style="text-decoration: none;">Our Products</a></li>
+                    <li class="menu"><a class="menu-li-atag active" href="product.html" style="text-decoration: none;">Our Products</a></li>
                     <li class="menu"><a class="menu-li-atag" href="register.html" style="text-decoration: none;">Registration</a></li>
                     <li class="menu"><a class="menu-li-atag" href="login.html" style="text-decoration: none;">Login</a></li>
                     <li class="menu"><a class="menu-li-atag" href="contactus.html" style="text-decoration: none;">Contact Us</a></li>
@@ -102,7 +105,7 @@
         <div class="grid-container">
             <div class="grid-item">
                 <p class="products-para">Ice Cream</p> 
-                <a href="producttypes.html"> <img src="./images/icecream.jpg" alt="ice cream image" class="product-image"></a>
+                <a href="producttypes.html"> <img src="./images/icecream.png" alt="ice cream image" class="product-image"></a>
             </div>
             <div class="grid-item">
                 <p class="products-para"> Ice Cream Cakes</p>
@@ -121,7 +124,13 @@
             <div class="grid-item">
                 <li class="product-li">
                     <p class="products-para">Signature Bars</p> 
-                    <img src="./images/Ibaco-Signature-Bars-home-new-1.png" alt="signature bars image" class="product-image">
+                    <img src="./images/Ibaco-Signature-Bars-home-new-1.png" alt="signature bars image" class="products-image">
+                </li>
+            </div>
+            <div class="grid-item">
+                <li class="product-li">
+                    <p class="products-para">Menu</p> 
+                    <a href="menu.html"><img src="./images/menu.jpg" alt="signature bars image" class="menu-image"></a>   
                 </li>
             </div>
           </div>
@@ -145,7 +154,21 @@
           </div> -->
     </main>
     <footer>
-        <p class="footers-para">&copy;Copyrights Ibaco</p>
+        <div class="footer-container">
+            <p class="footer-para">Get Connected with us on social network!</p><br>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i> 
+           </div>
+           <div class="footer-section">
+            <ul class="footer-ul">
+              <center>
+                <h1 class="footer-header"><u> Contact </u></h1>
+              </center>
+             <li>Email : <a href="mailto:ibaco@ibaco.com" class="footer-atag">ibaco@ibaco.com</a></li>
+             <li>PhoneNumber: <a href="tel:+4733378901" class="footer-atag">+47 333 78 901</a></li>
+            </ul>
+           </div>
+            <p class="footers-para para-footers">&copy;Copyrights Ibaco</p>
     </footer>
 </body>
 </html>

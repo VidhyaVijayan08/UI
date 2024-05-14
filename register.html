@@ -6,6 +6,7 @@
     <title>Registration </title>
     <link rel="icon" href="./images/logo.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <style>
      body{
             /* background-image: linear-gradient();
@@ -34,7 +35,7 @@
                 <ul>
                     <li class="menu"><a class="menu-li-atag" href="story.html" style="text-decoration: none;">Our Story</a></li>
                     <li class="menu"><a class="menu-li-atag" href="product.html" style="text-decoration: none;">Our Products</a></li>
-                    <li class="menu"><a class="menu-li-atag" href="register.html" style="text-decoration: none;">Registration</a></li>
+                    <li class="menu"><a class="menu-li-atag active" href="register.html" style="text-decoration: none;">Registration</a></li>
                     <li class="menu"><a class="menu-li-atag" href="login.html" style="text-decoration: none;">Login</a></li>
                     <li class="menu"><a class="menu-li-atag" href="contactus.html" style="text-decoration: none;">Contact Us</a></li>
                     <li class="menu"><a class="menu-li-atag" href="location.html" style="text-decoration: none;">Location</a></li>
@@ -50,38 +51,52 @@
                 <center>
                     <legend>Registration Form</legend>
                 </center>
-            <label for="Name">Name :</label><br>
+            <label for="Name" class="labels">Name :</label><br>
             <input type="text" name="Name" id="Name" placeholder="Enter Your Name"><br>
-            <label for="PhoneNumber">PhoneNumber : </label><br>
+            <label for="PhoneNumber" class="labels">PhoneNumber : </label><br>
             <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Enter Your PhoneNumber""><br>
-            <label for="Gender">Gender :</label><br>
-            <label for="Female">Female</label>
+            <label for="Gender" class="labels">Gender :</label><br>
+            <label for="Female" class="labels">Female</label>
             <input type="radio" name="Gender" id="Female">
-            <label for="Male">Male</label>
+            <label for="Male" class="labels">Male</label>
             <input type="radio" name="Gender" id="Male"><br>
             
-            <label for="Location">Location :</label><br>
-            <label for="Chennai">Chennai</label>
+            <label for="Location" class="labels">Location :</label><br>
+            <label for="Chennai" class="labels">Chennai</label>
             <input type="checkbox" name="Chennai" id="Chennai">
-            <label for="Madurai">Madurai</label>
+            <label for="Madurai" class="labels">Madurai</label>
             <input type="checkbox" name="Madurai" id="Madurai">
-            <label for="Kerala">Kerala</label>
+            <label for="Kerala" class="labels">Kerala</label>
             <input type="checkbox" name="Kerala" id="Chennai"><br>
-            <label for="Email">Email : </label><br>
+            <label for="Email" class="labels">Email : </label><br>
             <input type="email" name="Email" id="Email" placeholder="Enter Your Email ID" required><br>
-            <label for="Password">Password : </label><br>
+            <label for="Password" class="labels">Password : </label><br>
             <input type="password" name="Password" id="Password" placeholder="Enter Your Password" required autofocus><br>
-                <label for="File">Choose your File :</label>
+                <label for="File" class="labels">Choose your File :</label>
                 <input type="file" id="File" name="file" accept="image/png,image/jpeg" /><br>
                 <center>
-                    <button>Submit</button>
+                    <button class="buttons">Submit</button>
                 </center>
               </fieldset> 
         </form>
     </div>
    </main>
    <footer>
-    <p class="footers-para">&copy;Copyrights Ibaco</p>
-   </footer>
+    <div class="footer-container">
+        <p class="footer-para">Get Connected with us on social network!</p><br>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i> 
+       </div>
+       <div class="footer-section">
+        <ul class="footer-ul">
+          <center>
+            <h1 class="footer-header"><u> Contact </u></h1>
+          </center>
+         <li>Email : <a href="mailto:ibaco@ibaco.com" class="footer-atag">ibaco@ibaco.com</a></li>
+         <li>PhoneNumber: <a href="tel:+4733378901" class="footer-atag">+47 333 78 901</a></li>
+        </ul>
+       </div>
+        <p class="footers-para para-footers">&copy;Copyrights Ibaco</p>
+    </footer>
 </body>
 </html>
